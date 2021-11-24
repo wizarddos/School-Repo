@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-color: #14213D;
+    color: #5DB7DE;
+}
+.link{
+    color: #FCA311;
+    width: 20%;
+}
+
+.link:visited{
+    color: #7CB518;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    word-spacing: 2%;
+}

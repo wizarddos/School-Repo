@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Podstrona 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style = "background-color: #58657B;">
+    <h1>Podstrona 4</h1>
+    <nav class = "nav">
+        <a class = "link" href="index.html">Strona główna</a><br/>
+        <a class = "link" href="pod01.html">Informacje ogólne</a><br/>
+        <a class = "link" href="pod02.html">JSX</a><br/>
+        <a class = "link" href="pod03.html">Podstawy</a><br/>
+        <a class = "link" href="pod04.html">Hooki</a><br/>
+        <a class = "link" href="pod05.html">Testowanie</a><br/>
+        <a class = "link" href="pod06.html">Router</a><br/>
+    </nav>
+    <p style = "font-size: xx-large;">Reactowe Hooki</p><br/>
+    <p style="font-size: large;">
+            React zawiera w sobie mechanizm zaczepów (ang. hooks) oto 2 z nich<br/><br/> 
+            Zaczepów można używać jedynie w komponentach <u><b>Funkcyjnych</b></u><br/>
+            Zaczepy w kodzie zawsze (a przynajmniej powinny) zaczynają się od słowa use np. useState, useEffect
+    </p>
+    <p style="font-size: large;">
+        Pierwszy z zaczepów, <b>useState</b><br/>
+        <img src = "state.png" style = "width: 25%;" alt = "komponent ze stanem" /><br/>
+        Ten hook pozwala na zapisanie stanu w komponencie. Stan to zwykle jakaś informacja (łańcuch, liczba, tablica, Obiekt)<br/>
+        Która jest używana przez komponent lub inny hook 
+    </p>
+    <p style = "font-size: large;">
+        <br/><br/>
+        Kolejny z hooków <u><b>useEffect</b></u><br/>
+        dzięki niemu tworzymy "efekty uboczne" dla naszego komponentu np. pobieramy dane lub wyświetlamy jakieś alerty<br/>
+        w useEffect można również zmieniać wartość stanu<br/>
+
+        <img src = "effect.png" width="25%" alt = "komponent z efektem ubocznym" /><br/>
+        jako drugi parametr zaczep useEffect przyjmuje <b>Tablicę zależności</b><br/>
+        Dzięki niej możemy kontrolować kiedy efekt się wykona a kiedy nie<br/>
+        W tym przypadku efekt wykona się tylko podczas pierwszego renderowania komponentu<br/>
+        Jeżeli w tablicy umieścimy jakiś stan to efekt zostanie wykonany tylko podczas zmiany tego stanu
+    </p>
+    <p style="font-size: large;">
+        <br/><br/>
+        React daje możliwość tworzenia własnych zaczepów<br/>
+        w bibliotece React własne zaczepy traktowane są jak zwykłe funkcje javascript<br/>
+        <img src = "selfHook.png" width="25%" alt = "własny zaczep" /><br/>
+    </p>
+    <p style = "font-size: large;">
+        <br/><br/>
+        Jest też jedna ważna zasada dotycząca używania zaczepów<br/>
+        <p style = "font-size: x-large;">Nie mogą być używane poza komponentami!!</p>
+    </p>
+</body>
+</html>
